@@ -64,7 +64,7 @@ docker login
 
 ## we must push to our repository, like in github
 ```bash
-docker push DOCKER_USER]/IMAGE_NAME]:[OUR_VERSION_NAME]
+docker push $DOCKER_USERNAME/$IMAGE_NAME:$OUR_VERSION_NAME
 docker push $DOCKER_USERNAME/ubuntu:rmleo-v1
 ```
 
@@ -77,11 +77,4 @@ docker push $DOCKER_USERNAME/ubuntu:rmleo-v1
 docker history [IMAGE_NAME]:[OUR_VERSION_NAME]
 docker history ubuntu:rmleo-v1
 ```
-
-### an open source tool to view docker images
-https://github.com/wagoodman/dive
-
-### when you already have dive install you execute
-$ dive [IMAGE_NAME]:[OUR_VERSION_NAME]
-$ dive ubuntu:rmleo-v1
 
