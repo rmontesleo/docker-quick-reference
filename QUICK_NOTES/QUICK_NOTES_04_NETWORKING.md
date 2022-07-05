@@ -5,6 +5,7 @@
 ```bash
 docker network ls
 ```
+
 - **host**: represents our laptop network, not recomendable, its dangerous if you dont use it correctly
 - **none**: disable the network, is isolated, nothing connect to this.
 
@@ -50,9 +51,6 @@ docker run -d -p 9090:80 \
 -e 'PGADMIN_DEFAULT_PASSWORD=supersecret' \
 dpage/pgadmin4:6.8
 ```
-
-
-
 
 
 ### connect postgres to the network

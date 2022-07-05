@@ -1,13 +1,15 @@
-# Crating image
+# Creating image
 
+### Create your Dockere file
 ```bash
 touch Dockerfile
 ``` 
 
+### Basic structure
 ```yaml
-FROM [IMAGE_SOURCE]
+FROM <IMAGE_SOURCE>
 
-RUN [COMMANDS_TO_EXECUTE]
+RUN <COMMANDS_TO_EXECUTE>
 ```
 
 ###
@@ -20,7 +22,7 @@ RUN touch /usr/src/hello-world
 
 ### to create the image -t TAR
 ```bash
-docker build -t [IMAGE_NAME]:[OUR_VERSION_NAME] [CONTEXTO_BUILD]
+docker build -t <IMAGE_NAME>:<OUR_VERSION_NAME> <CONTEXTO_BUILD>
 
 docker build -t ubuntu:rmleo-v1 .
 ```
@@ -48,7 +50,7 @@ export DOCKER_USERNAME=<YOUR_DOCKER_USER_NAME>
 
 ### we must add a new tag to our image
 ```bash
-docker tag [IMAGE_NAME]:[OUR_VERSION_NAME] [DOCKER_USER]/IMAGE_NAME]:[OUR_VERSION_NAME]
+docker tag <IMAGE_NAME>:<OUR_VERSION_NAME> <DOCKER_USER>/<IMAGE_NAME>:<OUR_VERSION_NAME>
 docker tag ubuntu:rmleo-v1 $DOCKER_USERNAME/ubuntu:rmleo-v1
 ```
 
@@ -68,8 +70,8 @@ docker push $DOCKER_USERNAME/$IMAGE_NAME:$OUR_VERSION_NAME
 docker push $DOCKER_USERNAME/ubuntu:rmleo-v1
 ```
 
+---
 
--------------------------------------------------------------------------------
 ### layer system
 
 ### review our version layers

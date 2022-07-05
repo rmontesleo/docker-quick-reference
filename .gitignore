@@ -1,2 +1,15 @@
+# 
+.idea
+.vscode
+.vs
+
+#
 .env
 mongo-data
+
+#
+*.jar
+*.class
+
+#
+node_modules
