@@ -17,7 +17,7 @@ docker inspect [CONTAINER_NAME | CONTAINER_ID | FIRST_3_CHARS_OF_ID]
 
 ### inspect but use a filter
 ```bash
-docker inspect -f '{{ json .Config.Env }}' [CONTAINER_NAME | CONTAINER_ID | FIRST_3_CHARS_OF_ID]
+docker inspect -f '{{ json.Config.Env }}' [CONTAINER_NAME | CONTAINER_ID | FIRST_3_CHARS_OF_ID]
 ```
 
 ### rename containers, but every container must be unique name

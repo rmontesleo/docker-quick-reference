@@ -5,18 +5,22 @@
 docker run -d --name db mongo
 ```
 
-# check the logs
+### check the logs
 ```bash
 docker logs db
 ```
+
+### Go inside the db container
 ```bash
 docker exec -it db bash
 ```
 
+### Execute the mongo command inside the container
 ```bash
 `root@<CONTAINER_ID>:/#` mongo
 ```
 
+### Create a document inside the mytaskdb database
 ```bash
 > use mytasksdb
 > db.users.insert({"name": "Leo"});
