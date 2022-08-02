@@ -95,11 +95,4 @@ psql demos_db -U postgres_user
 ```
 
 
-## References
-
-- [Dockehub](https://hub.docker.com/)
-
-- [Postgres on Dockerhub](https://hub.docker.com/_/postgres)
-  
-- [Postgres, Docker on Github](https://github.com/docker-library/postgres/)
 

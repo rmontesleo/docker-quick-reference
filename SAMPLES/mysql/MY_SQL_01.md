@@ -1,9 +1,6 @@
-#  Notes to work with MySQL and Docker
-
-## Create the container
+# MySQL 8.0.21
 
 ### Create Docker Volume ( OPTIONAL )
-
 ```bash
 docker volume create [NAME_OF_THE_VOLUME]
 ```
@@ -26,6 +23,11 @@ docker run -d -p 3306:3306 \
 mysql:8.0.21
 ```
 
+### Connect with phpmyadmin
+```bash
+docker run --name my-admin -d --link mysqldb_dev_container:db -p 8080:80 phpmyadmin
+```
+
 ---
 
 ## Operations with the container
@@ -34,9 +36,6 @@ mysql:8.0.21
 ```bash
 docker exec -it mysqldb_dev_container bash
 ```
-
-# ----------------------------------------------------------------------------------------------
-# Operations with the database
 
 ### After thar we enter like root
 ```bash
@@ -53,11 +52,3 @@ mysql --user mysql_user --host localhost --port 3306 --database sandbox_db -p
 mysql>
 ```
 
-
-## References
-
-- [Dockehub](https://hub.docker.com/)
-
-- [MySQL Server on Dockerhub](https://hub.docker.com/_/mysql)
-
-- [MySQL, Docker on Github](https://github.com/docker-library/mysql)
