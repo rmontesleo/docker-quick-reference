@@ -28,8 +28,3 @@ programming-languages:
 - php
 
 frameworks: ["Spring", "Express", "Flask", "Angular "]
-
-
-
-
-

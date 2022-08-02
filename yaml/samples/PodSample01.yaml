@@ -16,4 +16,4 @@ spec:
     - name: sidecar-container
       image: curlimage/curl
       command: ["/bin/bash"]
-      args: ["-c", "echo Hello from sidecar contaier; sleep 300"]        
+      args: ["-c", "echo Hello from sidecar contaier; sleep 300"]
