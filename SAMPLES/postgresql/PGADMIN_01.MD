@@ -9,10 +9,3 @@ dpage/pgadmin4:6.8
 ```
 
 
-## RESOURCES
-
-- [Docker Hub: PGAdmin](https://hub.docker.com/r/dpage/pgadmin4)
-
-- [pgAdmin](https://www.pgadmin.org/)
-
-- [pgAdmin 4 Docker Image for PostgresQL](https://www.youtube.com/watch?v=pVinuOO-vis)
